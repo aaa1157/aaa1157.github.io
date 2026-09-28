@@ -1,5 +1,10 @@
 const langToggle = document.getElementById('langToggle');
 const year = document.getElementById('year');
+const portrait = document.querySelector('.portrait');
+
+if (portrait) {
+  portrait.src = 'assets/profile.jpg';
+}
 
 const savedLang = localStorage.getItem('site-lang');
 const browserPrefersZh = navigator.language.toLowerCase().startsWith('zh');
